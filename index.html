@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de Inputs</h1>
+    <form action="procesa.php">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <form action="">
+            <p>
+                <label for="nom">Nombre:</label>
+                <input type="text" maxlenght="6" id="nom" name="Nombre"> 
+             </p>
+             <p>
+                <label for="cont">Contraseña:</label>
+                <input type="password" maxlenght="8" id="cont" name="Contraseña"> 
+             </p>
+             <p>
+               <label for="Hombre">Hombre:</label>
+                <input type="radio" id="Hombre" value="H" checked name="Género">
+                <label for="Mujer">Mujer:</label>
+                <input type="radio" id="Mujer" value="M" name="Género">
+             </p>
+             <p>
+                <label for="Fumador">Fumador:</label>
+                <input type="checkbox" name="fuma" id="fuma">
+             </p>
+             </fieldset>
+             <p>
+                <label for="Provincia">Provincia</label>
+                <select name="Provincia" id="Provincia">
+                    <option value="cr">Ciudad Real</option>
+                    <option value="tol" selected>Toledo</option>
+                    <option value="alb">Albacete</option>
+                    <option value="gua">Guadalajara</option>
+                    <option value="cue">Cuenca</option>
+                </select>
+             </p>
+             <p>
+                <p>
+                <label for="obs">Observaciones:</label>
+                </p>
+                <textarea name="obs" id="obs"
+                cols="30" rows="10">
+                    
+                </textarea>
+             </p>
+             <p>
+                <label for="color">Color:</label>
+                <input type="color" name="color" id="color">
+             </p>
+             <p>
+                <label for="fecha-nac">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nac" name="fecha-nac">
+             </p>
+             <p>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" min="0" max="100">
+             </p>
+             <p>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Restablecer">
+             </p>
+        </form>
+</body>
+</html>
